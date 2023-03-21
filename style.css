@@ -1,3 +1,5 @@
+/* ------------------------------ TRONC COMMUN -----------------*/
+
 *{
   padding: 0;
   margin: 0;
@@ -10,6 +12,8 @@ body{
   background-color: #94d994;
 }
 
+/*------------------------------MAIN----------------------------*/
+
 
 .main-content{
   min-height: 100vh;
@@ -19,21 +23,20 @@ body{
   grid-template-columns: repeat(7, 1fr); /* 7 colonnes de tailles égal*/
 }
 
+/*------------------------------LEFT SECTION--------------------*/
+
 .left-section{
   grid-column: span 2; /* on selectionne les deux premieres colonnes */
   height: 100%;
   background-color: #65b665;
 }
 
-.right-section{
-  background-color: #fff;
-  grid-column: span 5;
-  height: 100%;
-}
 
 .left-content{
-  padding: 1rem;
+  padding: 2rem 3rem;
 }
+
+/*----------------------PHOTO - NOM - TITRE---------------------*/
 
 .profile{
   width: 100%;
@@ -63,51 +66,24 @@ body{
   letter-spacing: 1px;
 }
 
+/*--------------------------- HARD SKILLS-----------------------*/
+
 .main-title{
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: beige;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
-.contact-info ul{
-  padding-top: .2rem;
-}
-
-.contact-info ul li{
-  padding: .4rem 0;
-  display: flex;
-  align-items: center;
-  color: beige;
-}
-
-.contact-info ul li i{
-  padding-right: 0.5rem;
-  font-size: 1.1rem;
-  color: beige;
-}
-
-ul.link{
-  display: flex;
-  padding: 0 1rem;
-  gap: 2px;
-  width: 100%;
-  justify-content: space-between;
-}
-
-ul.link .icon2{
-  font-size: 25px;
-}
-
-ul.link .icon2:hover{
-  color: rgb(175, 36, 106);
+.skills-section ul{
+  padding-top: 1rem;
 }
 
 .skills-section ul li{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  padding: .4rem 0;
 }
 
 .progress-bar{
@@ -152,12 +128,137 @@ ul.link .icon2:hover{
 
 }
 
+/*----------------------------SOFT SKILLS-----------------------*/
+
+.soft_skills-section ul{
+  padding-top: 1rem;
+}
+
+.soft_skills-section ul li{
+  padding: .4rem 0;
+}
 
 
+/*----------------------------ABOUT-----------------------------*/
 
 
+.about-content p{
+  padding-top: 1rem;
+  color: #fff;
+}
 
 
+/*----------------------------CONTACTS--------------------------*/
+
+.contact-info ul{
+  padding-top: .2rem;
+}
+
+.contact-info ul li{
+  padding: .4rem 0;
+  display: flex;
+  align-items: center;
+  color: beige;
+}
+
+.contact-info ul li i{
+  padding-right: 0.5rem;
+  font-size: 1.1rem;
+  color: beige;
+}
+
+ul.link{
+  display: flex;
+  padding: 1rem 1rem;
+  gap: 2px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+ul.link .icon2{
+  font-size: 25px;
+}
+
+ul.link .icon2:hover{
+  color: rgb(175, 36, 106);
+}
+
+/*---------------------------RIGHT SECTION----------------------*/
+
+.right-section{
+  background-color: #fff;
+  grid-column: span 5;
+  height: 100%;
+}
+
+/*-------------------------------EXPERIENCES--------------------*/
+
+.right-main-content{
+  padding: 2rem 3rem;
+}
+
+.right-title{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: bisque;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+.right-title::after{
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: .2rem;
+  background-color: rgb(249, 208, 157);
+  border-radius: 12px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sect{
+  padding-bottom: 2rem;
+}
+
+.timeline{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.para2{
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.tl-title{
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.tl-title-2{
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: #fbe2bd;
+  text-transform: uppercase;
+}
+
+.tl-title-2::before{
+  content: "";
+  position: absolute;
+  width: .7rem;
+  height: .7rem;
+  background-color: bisque;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  left: 0;
+}
+
+.tl-content{
+  border-left: 1px solid #ccc;
+  padding-left: 2rem;
+  position: relative;
+}
 
 
 
