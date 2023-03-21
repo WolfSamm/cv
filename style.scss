@@ -1,0 +1,363 @@
+
+
+$background-color: #a281e4; 
+$left-color: #8c52ff; 
+$moon-effect: #ffbd59e3;
+$color-principal: #fff;
+$color-second: #ffbd59;
+$jauge-background: #a281e4d7;
+$jauge-color: #ffbd59;
+$hover-link: #ffbd59;
+
+
+/* ------------------------------ TRONC COMMUN -----------------*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  background-color: $background-color;
+}
+
+/*------------------------------MAIN----------------------------*/
+
+
+.main-content{
+  min-height: 100vh;
+  width: 80%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 colonnes de tailles égal*/
+}
+
+/*------------------------------LEFT SECTION--------------------*/
+
+.left-section{
+  grid-column: span 2; /* on selectionne les deux premieres colonnes */
+  height: 100%;
+  background-color: $left-color;
+}
+
+
+.left-content{
+  padding: 2rem 3rem;
+}
+
+/*----------------------PHOTO - NOM - TITRE---------------------*/
+
+.profile{
+  width: 100%;
+  border-bottom: 1px solid $color-second;
+}
+
+.image{
+  width: 100%;
+  text-align: center;
+}
+
+.profile img{
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 7px 0px 9px $moon-effect;
+}
+
+.name{
+  font-size: 1.5rem;
+  color: $title-principal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.2rem 0;
+}
+
+.career{
+  font-size: 1rem;
+  color: $title-second;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+
+/*--------------------------- HARD SKILLS-----------------------*/
+
+.main-title{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $color-second;
+  padding-top: 2rem;
+}
+
+.skills-section ul{
+  padding-top: 1rem;
+}
+
+.skills-section ul li{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: .4rem 0;
+}
+
+.progress-bar{
+  width: 100%;
+  height: .4rem;
+  background-color: $jauge-background;
+  position: relative;
+  border-radius: 12px;
+}
+
+.progress{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: $jauge-color;
+  border-radius: 12px;
+}
+
+.html-progress{
+  width: 70%;
+}
+
+.css-progress{
+  width: 70%;
+}
+
+.sass-progress{
+  width: 40%;
+}
+
+.git-progress{
+  width: 60%;
+}
+.js-progress{
+  width: 30%;
+}
+
+.skill-title{
+  text-transform: uppercase;
+  color: $color-principal;
+  font-size: .9rem;
+
+}
+
+/*----------------------------SOFT SKILLS-----------------------*/
+
+.soft_skills-section ul{
+  padding-top: 1rem;
+}
+
+.soft_skills-section ul li{
+  padding: .4rem 0;
+}
+
+
+/*----------------------------ABOUT-----------------------------*/
+
+
+.about-content p{
+  padding-top: 1rem;
+  color: $color-principal;
+}
+
+
+/*----------------------------CONTACTS--------------------------*/
+
+.contact-info ul{
+  padding-top: .2rem;
+}
+
+.contact-info ul li{
+  padding: .4rem 0;
+  display: flex;
+  align-items: center;
+  color: $color-principal;
+}
+
+.contact-info ul li i{
+  padding-right: 0.5rem;
+  font-size: 1.1rem;
+  color: $color-principal;
+}
+
+ul.link{
+  display: flex;
+  padding: 1rem 1rem;
+  gap: 2px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+ul.link .icon2{
+  font-size: 25px;
+}
+
+ul.link .icon2:hover{
+  color: $hover-link;
+}
+
+/*---------------------------RIGHT SECTION----------------------*/
+
+.right-section{
+  background-color: #fff;
+  grid-column: span 5;
+  height: 100%;
+  padding-top: 5rem;
+}
+
+.right-main-content{
+  padding: 3rem 3rem;
+}
+
+/*-------------------------------EXPERIENCES--------------------*/
+
+
+.right-title{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-second;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+.right-title::after{
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: .2rem;
+  background-color: $color-second;
+  border-radius: 12px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sect{
+  padding-bottom: 2rem;
+}
+
+.timeline{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.para2{
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.tl-title{
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.tl-title-2{
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: $color-second;
+  text-transform: uppercase;
+}
+
+.tl-title-2::before{
+  content: "";
+  position: absolute;
+  width: .7rem;
+  height: .7rem;
+  background-color: $color-second;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  left: 0;
+}
+
+.tl-content{
+  border-left: 1px solid #ccc;
+  padding-left: 2rem;
+  position: relative;
+  padding-bottom: 2rem ;
+}
+
+/*-------------------------------MEDIA QUERYS-------------------*/
+
+ @media screen and (max-width: 1200px) {
+  .main-content{
+    grid-template-columns: repeat(1, 1fr);
+    }
+  
+  .profile img{
+    width: 40%;
+  }  
+
+  .right-section{
+    padding-top: 0;
+  }
+
+  .tl-title{
+    font-size: 1rem;
+  }
+} 
+
+@media screen and (max-width: 860px) {
+    .right-main-content{
+      padding: 2rem 2rem;
+    }
+  }
+
+
+@media screen and (max-width: 823px) {
+  .right-title::after{
+    width: 40%;
+  }
+
+  .tl-content{
+    padding-left: 1rem;
+  }
+
+}
+
+
+@media screen and (max-width: 780px) {
+
+  .timeline{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .left-section{
+    grid-column: span 3;
+   }
+ 
+   .right-section{
+     grid-column: span 4;
+   }
+
+  .tl-title{
+    margin-top: .5rem;
+  } 
+
+   .para2{
+    margin-bottom: .5rem;
+   }
+}
+
+@media screen and (max-width: 700px) {
+  .profile img{
+    width: 60%;
+  }  
+}
+
+@media screen and (max-width: 681px) {
+  .right-title::after{
+    width: 30%;
+  }
+}
+
+  
+@media screen and (max-width: 390px) {
+  .name{
+    font-size: 1.5rem;
+  }
+}
