@@ -173,9 +173,9 @@ ul.link {
 ul.link .icon2 {
   font-size: 25px;
 }
-
 ul.link .icon2:hover {
   color: #ffbd59;
+  cursor: pointer;
 }
 
 li.mail {
@@ -205,7 +205,6 @@ li.mail {
   margin-bottom: 1.2rem;
   position: relative;
 }
-
 .right-title::after {
   content: "";
   position: absolute;
@@ -244,7 +243,6 @@ li.mail {
   color: #ffbd59;
   text-transform: uppercase;
 }
-
 .tl-title-2::before {
   content: "";
   position: absolute;
